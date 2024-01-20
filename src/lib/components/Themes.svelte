@@ -15,6 +15,7 @@
       const themes_section = data.sections.find(
         (section) => section._meta.id === 'ff5c3e56-690b-4220-abe9-9f02a74e1599'
       )
+      console.log(themes_section);
       themes = themes_section.templates.filter(
         (template) => template.price === '0' && template.available
       )

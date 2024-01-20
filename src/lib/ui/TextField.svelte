@@ -3,7 +3,7 @@
   const dispatch = createEventDispatcher()
 
   export let value
-  export let label = null
+  export let label = 'string' || null
   export let prefix = null
   export let variants = ''
 </script>

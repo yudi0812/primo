@@ -7,7 +7,7 @@
 
   /** @type {import('$lib').Site} */
   export let site
-  export let preview = null
+  export let preview =  null
 
   if (!preview && site) {
     supabase.storage

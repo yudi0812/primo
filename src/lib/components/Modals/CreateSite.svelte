@@ -73,7 +73,7 @@
 
 		var reader = new window.FileReader()
 		reader.onload = async function ({ target }) {
-			if (typeof target.result !== 'string') return
+			if (typeof target?.result !== 'string') return
 
 			try {
 				const uploaded = JSON.parse(target.result)
