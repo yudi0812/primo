@@ -13,7 +13,7 @@ export async function GET({ locals }) {
   const {data:token} = await supabase_admin.from('config').select('value').single()
 
   const headers = {
-  	Authorization: `Bearer ${token.value}`,
+  	Authorization: `Bearer ${token?.value}`,
   	Accept: 'application/vnd.github.v3+json'
   }
 
